@@ -1,0 +1,549 @@
+/* General Styles */
+
+/* Fonts Style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Common Shared Styles */
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary-1 {
+    color: white;
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    border-radius: 48px;
+    border: 0;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.btn-primary-2 {
+    color: white;
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: 0;
+    margin-bottom: 148px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 1920px;
+    height: 130px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px #eb5e5e52;
+}
+
+.nav-about {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.font-color {
+    color: #FF42A5;
+}
+
+.gamer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 640px 40px 240px;
+}
+
+.gamer-icon {
+    width: 50px;
+    height: 25px;
+}
+
+.gamer-word {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.nav-options {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    width: 220px;
+    height: 56px;
+    border-radius: 8px;
+    margin-right: 240px;
+    background: rgba(11, 2, 35, 0.10);
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Banner Styles */
+
+.banner {
+    display: flex;
+    align-items: initial;
+}
+
+.section-1 {
+    background-image: url(images/Group\ 14.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-right: 68px;
+    width: 900px;
+    height: 700px;
+    padding: 148px 300px 148px 240px;
+}
+
+.sec-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 0;
+}
+
+.para {
+    margin-bottom: 50px;
+}
+
+.para-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sec-title-ex {
+    width: 355px;
+    height: 111px;
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-2 {
+    margin-right: 240px;
+}
+
+/* Gamer Description */
+.gamer-title {
+    display: flex;
+    margin: 55px 240px;
+}
+
+
+.gamer-description {
+    text-align: right;
+}
+
+.we-are-gamer {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.games-words {
+    width: 520px;
+    color: #534C64;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.purpose,
+.unleash {
+    width: 520px;
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.unleash {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Funny Videos Section */
+.games-pic {
+    display: flex;
+    gap: 28px;
+    padding: 120px 240px;
+}
+
+
+.pic3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.pic3>img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pic3>.content {
+    position: absolute;
+    inset: 0;
+    font-size: 25px;
+    text-align: center;
+    padding: 155px 100px;
+    background: rgba(179, 182, 182, 0.699);
+}
+
+.pic3>img,
+pic3>.content {
+    transition: 250ms ease-in-out;
+}
+
+.pic3>image {
+    filter: blur(10px);
+}
+
+.pic3>.content {
+    opacity: 0;
+}
+
+.pic3:hover>.content {
+    opacity: 1;
+    cursor: pointer;
+}
+
+figcaption {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.watch-now {
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.funny {
+    text-align: center;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.funny-head {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.funny-video {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.funny-des {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* Play Section */
+
+.play-img {
+    display: flex;
+    align-items: center;
+}
+
+.play-intro {
+    text-align: right;
+    width: 353px;
+    padding: 200px 60px 360px 400px;
+}
+
+
+.play-head {
+
+    font-size: 48px;
+    text-align: right;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0B0223;
+}
+
+.play-ins {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-des {
+    color: #534C64;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+
+.img12 {
+    padding: 120px 240px 120px 0;
+}
+
+.img1 {
+    width: 635px;
+    height: 650px;
+    border-radius: 10px;
+    margin-left: 220px;
+}
+
+.img2 {
+    border-radius: 8px;
+    border: 0;
+    width: 319px;
+    height: 365px;
+    position: relative;
+    bottom: 245px;
+}
+
+/* Play Online Section */
+
+.play-online {
+    display: flex;
+}
+
+.img34 {
+    padding: 0 110px 0 240px;
+}
+
+.img3 {
+    width: 710px;
+    height: 650px;
+    border-radius: 10px;
+}
+
+.img4 {
+    width: 318px;
+    height: 365px;
+    border-radius: 10px;
+    border: 0;
+    position: relative;
+    margin-left: 528px;
+    bottom: 245px;
+}
+
+.play-desc {
+    text-align: left;
+    align-items: center;
+    padding: 120px 240px 120px 0;
+}
+
+.play-title {
+    color: #0B0223;
+    width: 426px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.play-title-ex {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-para {
+    width: 483px;
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* Career Sections */
+.career {
+    width: 1680px;
+    height: 821px;
+    padding: 120px 0 120px 240px;
+    display: flex;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+
+.car-title {
+    width: 426px;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.car-para {
+    width: 680px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.car-opt {
+    display: flex;
+    gap: 55px;
+}
+
+.car-opt-1 {
+    color: #FFF;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+
+.car-opt-2 {
+    text-align: right;
+    color: #FFF;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-bottom: 40px;
+}
+
+.car-btn {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    border-radius: 48px;
+    background: #FFF;
+    border: 0;
+}
+
+
+/* Hover Section */
+
+.category {
+    max-width: 1440px;
+    margin: 130px 240px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.button {
+    background: #fcf8f8;
+    margin: 0px auto;
+    min-width: 250px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    border: none;
+}
+
+.button:hover {
+    background-color: pink;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+
+/* Footer Styles */
+
+footer {
+    width: 1920px;
+    height: 636px;
+    background: #0B0223;
+}
+
+.footer-icon {
+    display: flex;
+    color: #FFF;
+    gap: 20px;
+    width: 87px;
+    height: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    align-items: center;
+    padding: 120px 833px 65px 833px;
+}
+
+.options {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    gap: 60px;
+    padding: 0 553px;
+}
+
+.social-nets {
+    display: flex;
+    gap: 40px;
+    padding: 70px 731px;
+}
+
+
+.terms-cond {
+    display: flex;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 60px;
+    padding: 5px 606px;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:576px) {
+    
+
+
+
+
+    
+
+}
