@@ -190,9 +190,8 @@
 .games-pic {
     display: flex;
     gap: 28px;
-    padding: 120px 240px;
+    padding: 25px 240px;
 }
-
 
 .pic3 {
     position: relative;
@@ -251,7 +250,6 @@ figcaption {
 
 .funny {
     text-align: center;
-    max-width: fit-content;
     margin: 0 auto;
 }
 
@@ -539,11 +537,26 @@ footer {
 }
 
 @media screen and (max-width:576px) {
-    
-
-
-
-
-    
-
+    .nav-bar,
+    .nav-about,
+    .gamer,
+    .nav-options,
+    .banner,
+    .para-icon,
+    .gamer-title,
+    .games-pic,
+    .play-img,
+    .play-online,
+    .career,
+    .car-opt,
+    .car-btn,
+    .category,
+    .button,
+    .footer-icon,
+    .footer-icon,
+    .options,
+    .social-nets,
+    .terms-cond{
+        flex-direction: column;
+    }
 }
