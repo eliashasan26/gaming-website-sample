@@ -36,8 +36,8 @@
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    width: 1920px;
-    height: 130px;
+    max-width: 1920px;
+    max-height: 130px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px #eb5e5e52;
 }
@@ -68,7 +68,6 @@
 }
 
 .gamer-word {
-    text-align: center;
     font-size: 34px;
     font-weight: 700;
 }
@@ -108,14 +107,13 @@
     margin-right: 68px;
     width: 900px;
     height: 700px;
-    padding: 148px 300px 148px 240px;
+    padding: 100px 300px 148px 240px;
 }
 
 .sec-title {
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
-    line-height: 0;
 }
 
 .para {
@@ -210,6 +208,8 @@
     font-size: 25px;
     text-align: center;
     padding: 155px 100px;
+    border: 5px solid red;
+    border-radius: 10px;
     background: rgba(179, 182, 182, 0.699);
 }
 
@@ -224,11 +224,11 @@ pic3>.content {
 
 .pic3>.content {
     opacity: 0;
+    cursor: pointer;
 }
 
 .pic3:hover>.content {
     opacity: 1;
-    cursor: pointer;
 }
 
 figcaption {
@@ -426,6 +426,7 @@ figcaption {
     font-size: 20px;
     font-weight: 600;
     line-height: 40px;
+    margin-left: -21%;
 }
 
 
@@ -449,7 +450,7 @@ figcaption {
 }
 
 
-/* Hover Section */
+/* Game Category Section */
 
 .category {
     max-width: 1440px;
@@ -536,27 +537,284 @@ footer {
     font-weight: 500;
 }
 
-@media screen and (max-width:576px) {
+/* Mobile View */
+
+@media screen and (max-width:425px) {
+
+
     .nav-bar,
-    .nav-about,
-    .gamer,
     .nav-options,
-    .banner,
-    .para-icon,
-    .gamer-title,
-    .games-pic,
-    .play-img,
-    .play-online,
-    .career,
-    .car-opt,
-    .car-btn,
-    .category,
-    .button,
-    .footer-icon,
-    .footer-icon,
-    .options,
-    .social-nets,
-    .terms-cond{
+    .gamer,
+    .nav-about {
+        all: unset;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+    }
+
+    .gamer {
+        align-items: center;
+        display: flex;
+    }
+
+    .nav-options {
+        align-items: center;
+    }
+
+    .nav-about {
+        flex-direction: column;
+        display: grid;
+        place-items: center;
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        margin: 0 auto;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .section-2>img {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .section-1 {
+        max-width: 300px;
+        max-height: 480px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    .sec-title {
+        font-size: 30px;
+    }
+
+    .sec-title-ex {
+        max-width: 250px;
+        font-size: 85px;
+    }
+
+    .para {
+        margin-bottom: 30px;
+    }
+
+    .gamer-title {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .pic>img {
+        max-width: 400px;
+    }
+
+    .gamer-description {
+        text-align: center;
+    }
+
+    .we-are-gamer {
+        font-size: 50px;
+    }
+
+    .games-words {
+        width: auto;
+        text-align: center;
+    }
+
+    .purpose,
+    .unleash {
+        width: auto;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+
+    .games-pic {
+        flex-direction: column;
+        display: grid;
+        place-items: center;
+        padding: 5px 40px;
+        gap: 20px;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+
+
+    .play-img {
         flex-direction: column;
     }
+
+    .play-intro {
+        text-align: center;
+        width: auto;
+        padding: 20px;
+    }
+
+
+    .play-head {
+        text-align: center;
+    }
+
+    .img12 {
+        padding: 0;
+    }
+
+    .img1 {
+        width: 75%;
+        height: 75%;
+        margin-left: 75px;
+    }
+
+    .img2>img {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 100px;
+    }
+
+    .play-online {
+        flex-direction: column-reverse;
+    }
+
+    .play-desc {
+        text-align: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .play-title {
+        width: auto;
+        font-size: 40px;
+    }
+
+    .play-para {
+        width: auto;
+    }
+
+    .img34 {
+        padding: 0;
+    }
+
+    .img3 {
+        width: 75%;
+        height: 75%;
+    }
+
+    .img4>img {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: -18.8rem;
+        top: 135px;
+    }
+
+    .career {
+        width: auto;
+        padding: 5px 10px 200px 10px;
+        flex-direction: column;
+    }
+
+    .car-title {
+        width: auto;
+        font-size: 35px;
+    }
+
+    .car-para {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .car-opt {
+        gap: 10px;
+    }
+
+    .car-opt-1 {
+        font-size: 13px;
+    }
+
+    .car-opt-2 {
+        font-size: 13px;
+    }
+
+    .car-btn {
+        padding: 15px 30px;
+    }
+
+    .group-img>img {
+        width: 100%;
+    }
+
+    .category {
+        max-width: 400px;
+        margin: 20px;
+        gap: 10px;
+    }
+
+    .button {
+        font-size: 8px;
+        min-width: 75px;
+        height: 30px;
+    }
+
+    .button>img {
+        height: 30px;
+    }
+
+
+    footer {
+        width: auto;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .footer-icon {
+        padding: 50px 150px 30px 150px;
+        gap: 10px;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-icon>img {
+        height: 60%;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+    }
+
+    .options {
+        font-size: 14px;
+        padding: 10px 75px;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .social-nets {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 25px 70px;
+    }
+
+    .terms-cond {
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 14px;
+        padding: 5px 20px;
+        justify-content: center;
+    }
+
+
 }
