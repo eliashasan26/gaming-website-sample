@@ -218,13 +218,9 @@ pic3>.content {
     transition: 250ms ease-in-out;
 }
 
-.pic3>image {
-    filter: blur(10px);
-}
-
 .pic3>.content {
     opacity: 0;
-    cursor: pointer;
+    
 }
 
 .pic3:hover>.content {
@@ -539,7 +535,7 @@ footer {
 
 /* Mobile View */
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:576px) {
 
 
     .nav-bar,
@@ -583,7 +579,7 @@ footer {
     .section-2>img {
         max-width: 300px;
         margin: 0 auto;
-        padding: 50px;
+        padding: 50px 125px;
     }
 
     .section-1 {
@@ -612,7 +608,9 @@ footer {
     }
 
     .pic>img {
-        max-width: 400px;
+        max-width: 570px;
+        align-items: center;
+        justify-content: center;
     }
 
     .gamer-description {
@@ -635,14 +633,22 @@ footer {
         padding-top: 60px;
     }
 
+    .funny-head,
+    .funny-video {
+        font-size: 40px;
+        padding-top: 40px;
+    }
 
     .games-pic {
         flex-direction: column;
         display: grid;
         place-items: center;
-        padding: 5px 40px;
-        gap: 20px;
+        justify-content: center;
+        padding: auto;
+        margin: 0 -25%;
     }
+
+
 
     figcaption {
         text-align: center;
@@ -657,7 +663,7 @@ footer {
     .play-intro {
         text-align: center;
         width: auto;
-        padding: 20px;
+        padding: 20px 20px 0;
     }
 
 
@@ -684,6 +690,7 @@ footer {
 
     .play-online {
         flex-direction: column-reverse;
+        margin-top: -250px;
     }
 
     .play-desc {
@@ -704,6 +711,7 @@ footer {
 
     .img34 {
         padding: 0;
+        padding-left: 80px;
     }
 
     .img3 {
@@ -715,13 +723,13 @@ footer {
         width: 50%;
         height: 50%;
         position: relative;
-        left: -18.8rem;
-        top: 135px;
+        left: -16.5rem;
+        top: 120px;
     }
 
     .career {
         width: auto;
-        padding: 5px 10px 200px 10px;
+        padding: 0 10px 200px 10px;
         flex-direction: column;
     }
 
@@ -757,8 +765,9 @@ footer {
 
     .category {
         max-width: 400px;
-        margin: 20px;
+        margin: 25px auto;
         gap: 10px;
+        align-items: center;
     }
 
     .button {
@@ -776,10 +785,11 @@ footer {
         width: auto;
         height: auto;
         align-items: flex-start;
+        margin: 0, auto;
     }
 
     .footer-icon {
-        padding: 50px 150px 30px 150px;
+        padding: 50px 225px 30px;
         gap: 10px;
         font-size: 25px;
         align-items: center;
@@ -797,7 +807,7 @@ footer {
         font-size: 14px;
         padding: 10px 75px;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 60px;
         justify-content: center;
     }
 
@@ -805,7 +815,7 @@ footer {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 80px;
         padding: 25px 70px;
     }
 
