@@ -205,10 +205,10 @@
 .pic3>.content {
     position: absolute;
     inset: 0;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     padding: 155px 100px;
-    border: 5px solid red;
+    border: 2px solid red;
     border-radius: 10px;
     background: rgba(179, 182, 182, 0.699);
 }
@@ -687,6 +687,7 @@ footer {
     }
 
     .play-desc {
+        all: unset;
         text-align: center;
         align-items: center;
         padding: 5px;
